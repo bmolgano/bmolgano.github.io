@@ -67,4 +67,41 @@ title: Data Prep and EDA
 
 # Data Prep and EDA
 
-This is the data prep and eda page.
+# Data Preparation & Exploratory Data Analysis (EDA)
+
+## Data Sources and Collection Methods
+
+For this project, two primary datasets were gathered to support the goal of forecasting mental health service demand based on projected population growth in Colorado:
+
+1. **Colorado Population Projections Dataset**
+   - Source: [Colorado Information Marketplace](https://data.colorado.gov/Demographics/Population-Projections-in-Colorado/q5vp-adf3/about_data)
+   - Download Format: CSV
+   - [Download Raw Dataset](assets/Population_Projections_in_Colorado_20250713.csv)
+
+2. **U.S. Census Bureau API – ACS 5-Year Estimates**
+   - API Source: [https://www.census.gov/data/developers/data-sets.html](https://www.census.gov/data/developers/data-sets.html)
+   - API GET Example:
+     ```
+     https://api.census.gov/data/2022/acs/acs5?get=NAME,B01003_001E&for=county:*&in=state:08&key=YOUR_API_KEY
+     ```
+   - [View Python Notebook for API Collection](assets/colorado_population_api_project.ipynb)
+
+## Why These Datasets Were Chosen
+
+Population projections provide a foundational view of where service demand is likely to grow, especially among specific age groups and geographic regions. Combining this with U.S. Census estimates allows for a more complete picture of baseline population and demographic trends across Colorado counties.
+
+---
+
+## Raw Data Snapshots
+
+### Example from Colorado Population Projections CSV:
+
+![Raw Population Data](assets/raw_population_data.png)
+
+### Example from Census API Dataset:
+
+![Raw Census API Data](assets/raw_census_api_data.png)
+
+---
+
+## Data Cleaning and Preparation Steps
