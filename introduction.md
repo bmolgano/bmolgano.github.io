@@ -71,6 +71,9 @@ Mental health is a critical public health priority that affects people of all ag
 
 This project explores how population growth and demographic changes in Colorado over the next 20 to 30 years could shape the future demand for mental health services. It centers on the idea that projected population shifts among high-need age groups can serve as early indicators of where service capacity may fall short. This research aims to bring a proactive lens to an already strained system. It matters because current capacity doesn’t always reflect future need, especially in fast-growing or underserved areas. While several studies and public health strategies have aimed to increase access to care, few have connected those efforts directly to projected population data at the county or regional level. This project offers a framework for using state population projections to anticipate demand and eventually combining those insights with additional datasets to deepen the analysis. Ultimately, this work is about helping local leaders, providers, and policymakers better align services with the communities they serve.
 
+![Colorado Growth Map](assets/Picture1.png)
+Colorado’s population trends show both growth and decline across different regions. While counties like El Paso, Adams, and Denver experienced natural increases, many rural and non-metro counties faced population loss due to more deaths than births. In total, 36% of Colorado counties saw overall population decline, driven by net-out migration and natural decrease, especially in places like Arapahoe, Eagle, and Boulder.
+
 # Research Questions 
 1.	Which Colorado counties are projected to experience the highest population growth between 2025 and 2055?
 2.	How is the age distribution expected to change across Colorado regions over the next 20–30 years?
