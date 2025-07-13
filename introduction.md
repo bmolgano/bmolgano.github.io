@@ -66,6 +66,7 @@ title: Introduction
 </style>
 
 # Introduction
+# Forecasting Mental Health Service Demand Using Colorado Population Projections
 
 Mental health is a critical public health priority that affects people of all ages, backgrounds, and communities. In Colorado, access to mental health services is especially important as the state continues to experience population growth, demographic shifts, and federal and state budget fluctuations. With new residents arriving every year and existing communities evolving, ensuring that behavioral health services are available, accessible, and affordable becomes an ongoing challenge. This isn’t just about providing support for those currently seeking care, it’s also about planning ahead to meet future needs. Colorado’s policymakers, health systems, and community organizations all face questions about where to place new mental health clinics, how many providers will be needed, and which regions may experience service gaps. Understanding these future needs requires a proactive approach that looks beyond today’s numbers. This project focuses on exploring how Colorado’s projected population growth can be used as a foundation for predicting future mental health service demand across the state. By examining long-term population trends and age breakdowns, we can better anticipate where services will be most needed, helping to guide planning, resource allocation, and policy development.
 
