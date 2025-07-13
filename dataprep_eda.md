@@ -105,3 +105,45 @@ Population projections provide a foundational view of where service demand is li
 ---
 
 ## Data Cleaning and Preparation Steps
+
+
+| Step | Description |
+|------|-------------|
+| Remove Null Values | Checked for missing or null population values; no null values found. |
+| Data Type Conversion | Converted numeric fields from string to integer for accurate calculations. |
+| Column Renaming | Renamed columns for clarity in visualizations and analysis. |
+| Filtering | Removed unnecessary age group records and focused on total population fields. |
+| Normalization | Applied normalization techniques for model-ready datasets (specific methods noted per model). |
+
+## Exploratory Data Analysis (EDA)
+
+Below are example visualizations that were created to explore population trends relevant to mental health service planning:
+
+### Least Populated Counties
+
+![Least Populated Counties](assets/Bottom 10 Least Populated Counties — Bar Plot.png)
+
+### Top 10 Counties by Population
+
+![Top 10 Counties](assets/Top 10 Counties by Population in a Selected Year (Bar Plot).png)
+
+### Most Populated Counties
+
+![Most Populated Counties](assets/Top 10 Most Populated Counties — Bar Plot.png)
+
+---
+
+## Summary Observations
+
+- **Urban Growth Trends:** Counties like Denver, El Paso, and Adams show consistent projected growth.
+- **Rural Decline Patterns:** Several rural counties show net population loss, suggesting potential service gaps.
+
+---
+
+## Linked Files and Resources
+
+- [Colorado Population Projections CSV](assets/Population_Projections_in_Colorado_20250713.csv)
+- [Census API Python Notebook](assets/colorado_population_api_project.ipynb)
+
+---
+
