@@ -1,28 +1,3 @@
 theme: jekyll-theme-merlot
 title: Betsy Molgano
 description: Welcome to my webisite for Machine Learning.
-
-nav:
-  - title: Home
-    url: index.html
-  - title: Introduction
-    url: introduction.html
-  - title: Conclusions
-    url: conclusion.html
-  - title: DataPrep_EDA
-    url: dataprep_eda.html
-    subitems:
-      - title: Clustering
-        url: clustering.html
-      - title: ARM
-        url: arm.html
-      - title: NaiveBayes
-        url: naivebayes.html
-      - title: DecTrees
-        url: dectrees.html
-      - title: SVMs
-        url: svms.html
-      - title: Regression
-        url: regression.html
-      - title: NN
-        url: nn.html
