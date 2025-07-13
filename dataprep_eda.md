@@ -168,6 +168,8 @@ Based on initial exploratory data analysis, Colorado’s population projections 
 ## Linked Files and Resources
 
 - [Colorado Population Projections CSV](assets/Population_Projections_in_Colorado_20250713.csv)
+- [Population_Projections_in_Colorado Code](assets/Population_Projections_in_Colorado (1).ipynb)
+- [Colorado Population Projections Code](assets/colorado_population_api_project (2).ipynb)
 - [Census API Python Notebook](assets/colorado_population_api_project.ipynb)
 
 ---
