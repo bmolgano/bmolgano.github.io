@@ -161,9 +161,7 @@ Below are example visualizations that were created to explore population trends 
 ---
 
 ## Summary Observations
-
-- **Urban Growth Trends:** Counties like Denver, El Paso, and Adams show consistent projected growth.
-- **Rural Decline Patterns:** Several rural counties show net population loss, suggesting potential service gaps.
+Based on initial exploratory data analysis, Colorado’s population projections show notable growth concentrated in urban counties such as Denver, El Paso, and Adams, while many rural counties face either flat growth or population decline. This uneven distribution highlights future challenges for mental health service planning. Areas experiencing rapid growth may face increased demand for services that local systems are not currently equipped to handle, while rural areas may continue to struggle with limited resources despite smaller populations. Age distribution and population shifts revealed through both state-level projections and U.S. Census data suggest that specific demographic groups like working-age adults and older adults will drive much of this demand. These findings underline the importance of using predictive modeling tied to population growth as a proactive strategy for identifying future service gaps and ensuring equitable access to mental health care across Colorado’s diverse regions.
 
 ---
 
