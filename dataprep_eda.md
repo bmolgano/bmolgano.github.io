@@ -131,6 +131,21 @@ Below are example visualizations that were created to explore population trends 
 
 ![Most Populated Counties](assets/Top 10 Most Populated Counties — Bar Plot.png)
 
+### Population Projections by County and Year
+
+![Population Projections by County and Year](assets/Heatmap - Population Projections by County and Year.png)
+
+### Histogram of Total Population Values
+
+![Histogram of Total Population Values](assets/Histogram of Total Population Values (All Counties, All Years).png)
+
+###  Total Projected Population Over Time
+
+![Projected Population Over Time](assets/Total Projected Population Over Time.png)
+
+###  Total Population by Year
+
+![Total Population](assets/Boxplot - Total Population by Year.png)
 ---
 
 ## Summary Observations
