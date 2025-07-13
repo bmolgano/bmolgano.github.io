@@ -146,6 +146,18 @@ Below are example visualizations that were created to explore population trends 
 ###  Total Population by Year
 
 ![Total Population](assets/Boxplot - Total Population by Year.png)
+
+###  Top 5 Counties by Population Share
+
+![Top 5 Counties by Population Share](assets/Top 5 Counties by Population Share.png)
+
+###  Distribution of County Populations in Colorado
+
+![Distribution of County Populations in Colorado](assets/Distribution of County Populations in Colorado.png)
+
+###  County Population Spread with Outliers
+
+![County Population Spread with Outliers](assets/County Population Spread with Outliers.png)
 ---
 
 ## Summary Observations
