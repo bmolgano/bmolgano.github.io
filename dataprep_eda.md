@@ -73,6 +73,8 @@ title: Data Prep and EDA
 
 For this project, two primary datasets were gathered to support the goal of forecasting mental health service demand based on projected population growth in Colorado:
 
+# Additional Datasets will be added to this research. A data request has been submitted to Center for Improving Value in Healthcare for the "Colorado All Payer Claims Database (CO APDC). CIVHC is the administrator of Colorado All Payer Claims Database (CO APCD), the state’s most comprehensive health care claims database representing the majority of covered lives and payers. The CO APCD includes the percentage of the population represented in each county and information on race and ethnicity data, behavioral health services, dental code volume, and vision claims. 
+
 1. **Colorado Population Projections Dataset**
    - Source: [Colorado Information Marketplace](https://data.colorado.gov/Demographics/Population-Projections-in-Colorado/q5vp-adf3/about_data)
    - Download Format: CSV
