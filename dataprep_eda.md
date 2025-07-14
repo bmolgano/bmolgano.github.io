@@ -73,7 +73,7 @@ title: Data Prep and EDA
 
 For this project, two primary datasets were gathered to support the goal of forecasting mental health service demand based on projected population growth in Colorado:
 
-# Additional Datasets will be added to this research. A data request has been submitted to Center for Improving Value in Healthcare for the "Colorado All Payer Claims Database (CO APDC). CIVHC is the administrator of Colorado All Payer Claims Database (CO APCD), the state’s most comprehensive health care claims database representing the majority of covered lives and payers. The CO APCD includes the percentage of the population represented in each county and information on race and ethnicity data, behavioral health services, dental code volume, and vision claims. 
+Additional Datasets will be added to this research. A data request has been submitted to Center for Improving Value in Healthcare for the "Colorado All Payer Claims Database (CO APDC). CIVHC is the administrator of Colorado All Payer Claims Database (CO APCD), the state’s most comprehensive health care claims database representing the majority of covered lives and payers. The CO APCD includes the percentage of the population represented in each county and information on race and ethnicity data, behavioral health services, dental code volume, and vision claims. 
 
 1. **Colorado Population Projections Dataset**
    - Source: [Colorado Information Marketplace](https://data.colorado.gov/Demographics/Population-Projections-in-Colorado/q5vp-adf3/about_data)
@@ -112,10 +112,11 @@ Population projections provide a foundational view of where service demand is li
 | Step | Description |
 |------|-------------|
 | Remove Null Values | Checked for missing or null population values; no null values found. |
+| Check for Mising Values | Ensure there aren’t unexpected null entries that need cleaning. |
+| Generates Summary Statistics | Generates summary statistics like mean, min, max, and standard deviation to identify potential outliers or incorrect values. |
 | Data Type Conversion | Converted numeric fields from string to integer for accurate calculations. |
-| Column Renaming | Renamed columns for clarity in visualizations and analysis. |
-| Filtering | Removed unnecessary age group records and focused on total population fields. |
-| Normalization | Applied normalization techniques for model-ready datasets (specific methods noted per model). |
+| Sorting the Data | Orders all rows in DataFrame from largest to smallest population value. |
+| Previewing Top Values | Displays the top 10 rows after sorting to check which counties have the highest reported populations. |
 
 ## Exploratory Data Analysis (EDA)
 
