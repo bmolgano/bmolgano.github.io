@@ -111,3 +111,5 @@ The final scatterplot projects the dataset onto the first two principal componen
 Through Principal Component Analysis, the dimensionality of the census microdata was reduced while retaining variance in a few components. This transformation helped simplify the data and made it easier to identify relationships between demographic characteristics like age, education, employment status, and health insurance coverage. By reducing redundancy and noise in the data, PCA enhances the efficiency and accuracy of predictive models or methods applied later. It also enables clearer insights into the population structure, which can inform where and how to target future mental health resources based on key demographic drivers.
 
 )</p>
+
+---
