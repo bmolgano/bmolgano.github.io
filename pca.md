@@ -63,4 +63,10 @@ title: PCA
 
 <h1>PCA Analysis</h1>
 
-<p>Paste PCA content here: (Overview, Data Prep, Code, Results, Conclusions)</p>
+<p>Paste PCA content here: 
+  
+# Overview
+# Data Prep
+# Code
+# Results
+# Conclusions)</p>
