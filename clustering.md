@@ -81,7 +81,8 @@ Below is a sample of the data used:
 *** Add Dataset
 
 ## (c) Clustering Code
-I used Python (Google Colab) to implement both k-means and hierarchical clustering.
+[ Clustering Colorado Population Notebook](assets/Clustering_Colorado_Population%20(2).ipynb)
+
 
 ## (d) Results
 To identify patterns in projected population structures across Colorado counties, both k-means clustering and hierarchical clustering was applied to age-based population projections for the year 2050.
