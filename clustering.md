@@ -7,8 +7,8 @@ title: Clustering
   <li><a href="index.html">Home</a></li>
   <li><a href="introduction.html">Introduction</a></li>
   <li><a href="conclusion.html">Conclusions</a></li>
-  <li><a href="clustering.html">Clustering</a><li>
-  <li><a href="pca.html">PCA</a><li>
+  <li><a href="clustering.html">Clustering</a></li>
+  <li><a href="pca.html">PCA</a></li>
   <li class="dropdown">
     <a href="dataprep_eda.html" class="dropbtn">DataPrep_EDA</a>
     <div class="dropdown-content">
@@ -23,61 +23,23 @@ title: Clustering
   </li>
 </ul>
 
-<style>
-.nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
+---
 
-.nav li {
-  float: left;
-  position: relative;
-}
+# Clustering Analysis
 
-.nav li a, .dropbtn {
-  display: inline-block;
-  padding: 14px 16px;
-  text-decoration: none;
-  background-color: #f9f9f9;
-}
-
-.nav li .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.nav li:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  display: block;
-  text-decoration: none;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-</style>
-
-# Clustering Analysis 
-
-# (a) Overview
+## (a) Overview
 Clustering is an unsupervised machine learning technique that groups similar data points together based on their features. Unlike supervised methods, clustering does not require labeled outcomes. There are two primary types of clustering, 
 partitional clustering which divides data into k non-overlapping clusters based on a defined distance metric, and hierarchical Clustering which builds a tree by successively merging or splitting clusters. For this analysis, the euclidean distance for k-means and cosine similarity for hierarchical clustering were utilized. Clustering helps uncover natural groupings within Colorado population projections and demographics, allowing for deeper 
 insight into regional service needs for behavioral health.
+
+---
+
 ## Sample of Data Used
 
 ![Sample of Colorado Population Data](assets/data.colorado.gov%20head%20of%20data.png)
 
 ---
+
 ## (b) Data Preparation
 Clustering requires unlabeled, numeric input data. I extracted a subset of demographic and population projection features from my cleaned dataset and scaled it using StandardScaler to ensure uniform contribution across variables.
 Below is a sample of the data used:
@@ -90,6 +52,7 @@ Below is a sample of the data used:
 ## (c) Clustering Code
 [ Clustering Colorado Population Notebook](assets/Clustering_Colorado_Population%20(2).ipynb)
 
+--- 
 
 ## (d) Results
 To identify patterns in projected population structures across Colorado counties, both k-means clustering and hierarchical clustering was applied to age-based population projections for the year 2050.
@@ -106,7 +69,6 @@ In addition to K-Means, hierarchical clustering using cosine distance and averag
 
 ---
 
-
 ## (e) Conclusions
 Through clustering analysis of Colorado's projected county-level population data for the year 2050, it was uncovered that distinct groupings of counties with similar age distributions. These clusters provide valuable insight into how future behavioral health service demand may vary across regions. For example, one group of counties may be characterized by a larger proportion of older adults, signaling an anticipated need for geriatric mental health services, while another cluster may reflect a younger demographic profile, indicating future demand for youth and adolescent behavioral health interventions.
 
@@ -114,3 +76,4 @@ The combination of K-Means clustering (with optimal k = 4) and hierarchical clus
 
 By identifying clusters of demographically similar counties, this work provides a foundation for regional planning, targeted outreach, and more accurate demand forecasting in behavioral health. These insights are essential for informing policy decisions and resource allocation strategies across the state.
 
+---
