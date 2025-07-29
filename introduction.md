@@ -77,6 +77,8 @@ Predictive modeling allows us to simulate different scenarios for mental health 
 ![Colorado Growth Map](assets/Picture1.png)
 Colorado’s population trends show both growth and decline across different regions. While counties like El Paso, Adams, and Denver experienced natural increases, many rural and non-metro counties faced population loss due to more deaths than births. In total, 36% of Colorado counties saw overall population decline, driven by net-out migration and natural decrease, especially in places like Arapahoe, Eagle, and Boulder.
 
+This project combines population projection data with predictive analytics techniques such as clustering, principal component analysis (PCA), and supervised learning models like Naive Bayes and decision trees. These methods provide an analysis into hidden patterns in Colorado counties by potential need and emerging trends that may otherwise be obscured in raw data tables. The analytical approach is grounded in Colorado-specific datasets, ensuring regional relevance and practical application for local stakeholders. By translating demographic projections into actionable insights, this research provides a foundation for forward-looking mental health service planning that accounts for both geographic and age-based disparities.
+
 # Research Questions 
 1.	Which Colorado counties are projected to experience the highest population growth between 2025 and 2055?
 2.	How is the age distribution expected to change across Colorado regions over the next 20–30 years?
