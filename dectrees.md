@@ -24,23 +24,37 @@ title: Decision Tree's
 
 ## (a) Overview
 
-Decision Trees are a type of supervised learning model used for tasks like classification and prediction. They work by asking a series of questions based on feature values to
-split the data into groups. Each decision leads to a branch, and each final result or "leaf" gives a predicted outcome. One of the main benefits of Decision Trees is that 
-they're easy to understand, which makes them especially helpful in fields like public health. They can show how different factors like age or service history can lead to 
-higher or lower mental health care use. Decision Trees are often used to flag risk groups, highlight important decision points, and make the logic behind predictions easier to
+Decision Trees are a type of supervised learning model used for tasks like classification and prediction. They work by asking a series of questions based on feature values to split the data into groups. Each decision leads to a branch, and each final result or "leaf" gives a predicted outcome. One of the main benefits of Decision Trees is that they're easy to understand, which makes them especially helpful in fields like public health. They can show how different factors like age or service history can lead to higher or lower mental health care use. Decision Trees are often used to flag risk groups, highlight important decision points, and make the logic behind predictions easier to
 see.
 
 To figure out where to split the data, Decision Trees use methods like Gini Impurity and Entropy, which measure how mixed the groups are. Information Gain shows how much 
 cleaner a split makes the data. For example, if a split perfectly separates youth and adult patients by service need, the Information Gain is high. But trees can grow too 
-complex, splitting until every data point is in its own group, also know as overfitting. Limiting the tree's depth or use pruning to remove unnecessary branches can alleviae 
-the complexity in trees. Overall, Decision Trees offer a good mix of clarity and power, making them a great choice for predicting and understanding mental health service 
-demand.
+complex, splitting until every data point is in its own group, also know as overfitting. Limiting the tree's depth or use pruning to remove unnecessary branches can alleviae the complexity in trees. Overall, Decision Trees offer a good mix of clarity and power, making them a great choice for predicting and understanding mental health service demand.
 
 ---
 
 ## Data Prep
 
 For this supervised learning task, a labeled dataset was used that includes features such as projected county population, age group percentages, and other demographic indicators, with a binary target label indicating “High” or “Low” predicted mental health service demand. Since Decision Trees are a supervised method, labeled data is essential for the model to learn patterns from the training data and uses them to make predictions on new, unseen data. The dataset was split into a Training Set (80%) and a Testing Set (20%) using train_test_split() from sklearn.model_selection. This ensures that the model is trained on one portion of the data and evaluated on a separate, disjoint set, which helps prevent overfitting and gives us a reliable estimate of model performance. The data was shuffled before splitting to ensure a balanced distribution of classes in both sets.
+
+### Dataset Used
+
+The [FY23 Public Low Value Care dataset](assets/FY23_Public%20Data_Low%20Value%20Care.xlsx) dataset was used for this Naive Bayes classification. This dataset contains labeled examples used to train and test the model. Only labeled data can be used in supervised learning methods like Naive Bayes.
+
+
+<!-- Sample of cleaned data -->
+![Sample of Cleaned Data](assets/Sample%20of%20Cleaned%20Data.jpeg)
+
+<!-- Training and Testing Set Samples -->
+**Training Set Samples:**
+
+![Training Set Sample 1](assets/Training%20Set%20Sample.jpeg)
+![Training Set Sample 2](assets/Training%20Set%20Sample%202.jpeg)
+
+**Testing Set Samples:**
+
+![Testing Set Sample 1](assets/Testing%20Set%20Sample.jpeg)
+![Testing Set Sample 2](assets/Testing%20Set%20Sample%202.jpeg)
 
 ---
 
