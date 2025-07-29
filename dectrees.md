@@ -43,10 +43,13 @@ demand.
 
 ## Data Prep
 
+For this supervised learning task, a labeled dataset was used that includes features such as projected county population, age group percentages, and other demographic indicators, with a binary target label indicating “High” or “Low” predicted mental health service demand. Since Decision Trees are a supervised method, labeled data is essential for the model to learn patterns from the training data and uses them to make predictions on new, unseen data. The dataset was split into a Training Set (80%) and a Testing Set (20%) using train_test_split() from sklearn.model_selection. This ensures that the model is trained on one portion of the data and evaluated on a separate, disjoint set, which helps prevent overfitting and gives us a reliable estimate of model performance. The data was shuffled before splitting to ensure a balanced distribution of classes in both sets.
+
 ---
 
 ## Code
 
+[View the Decision Trees Colab Notebook](assets/Decision_Trees_Tab_.ipynb)
 
 ---
 
