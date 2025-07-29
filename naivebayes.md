@@ -60,7 +60,6 @@ both categories. This performance suggests that existing claims-based utilizatio
 
 The ability to classify regions based on current inefficiencies provides a foundation for proactive planning. In particular, regions classified as high-usage may indicate 
 underlying issues such as poor access to preventive or coordinated care factors often linked to behavioral health gaps. As Colorado's population continues to grow and shift,
-this model could be extended by integrating projected demographic changes to estimate where behavioral health demand is most likely to rise. Ultimately, this work supports a 
-data-driven approach to identifying future service needs and informing policy, resource allocation, and system design for mental health care in the state.
+this model could be extended by integrating projected demographic changes to estimate where behavioral health demand is most likely to rise. Ultimately, this work supports a data-driven approach to identifying future service needs and informing policy, resource allocation, and system design for mental health care in the state.
 
 ---
