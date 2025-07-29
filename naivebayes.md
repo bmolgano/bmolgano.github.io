@@ -53,13 +53,12 @@ The dataset used for the Naive Bayes classification model was derived from a cle
 ![Testing Set Sample 1](assets/Testing%20Set%20Sample.jpeg)
 ![Testing Set Sample 2](assets/Testing%20Set%20Sample%202.jpeg)
 
-<!-- Optional: Link to cleaned dataset -->
-[Download cleaned dataset used in training](assets/Sample%20of%20Cleaned%20Data.jpeg)
 ---
 
 ## Code
 
-[View notebook](assets/Naive_Bayes_Tab_.ipynb)
+
+[View Naive Bayes Python Notebook](assets/Naïve_Bayes_Tab.ipynb)
 ---
 
 ## Results
