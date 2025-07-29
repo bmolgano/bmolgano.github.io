@@ -12,12 +12,9 @@ title: Conclusion
     <div class="dropdown-content">
       <a href="clustering.html">Clustering</a>
       <a href="pca.html">PCA</a>
-      <a href="arm.html">ARM</a>
       <a href="naivebayes.html">NaiveBayes</a>
       <a href="dectrees.html">DecTrees</a>
       <a href="svms.html">SVMs</a>
-      <a href="regression.html">Regression</a>
-      <a href="nn.html">NN</a>
     </div>
   </li>
 </ul>
