@@ -11,6 +11,7 @@ title: Introduction
     <a href="dataprep_eda.html" class="dropbtn">DataPrep_EDA</a>
     <div class="dropdown-content">
       <a href="clustering.html">Clustering</a>
+      <a href="pca.html">PCA</a>
       <a href="arm.html">ARM</a>
       <a href="naivebayes.html">NaiveBayes</a>
       <a href="dectrees.html">DecTrees</a>
