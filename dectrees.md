@@ -51,16 +51,26 @@ demand.
 ---
 
 ## Results
+
+To evaluate model performance, three Decision Trees were trained with increasing depth: shallow (max_depth=2), medium (max_depth=4), and full depth. Each model was evaluated using accuracy, precision, recall, F1-score, and confusion matrices.
+
+#### Classification Report
+![Classification Report](/assets/Classification%20Report.jpeg)
+
 The decision tree model produced interpretable and meaningful classification results when trained to predict high versus low low-value care usage. The tree used features 
 such as geographic region, payer type, and year to split the data in a way that best separated the two classes. For example, the model used whether the patient was from 
 Grand Junction or Boulder and the year of service to guide early splits. This shows that both geography and time are influential factors in determining low-value care usage
 patterns. Nodes closer to the root of the tree tend to reflect variables with higher information gain, meaning they help most in reducing classification uncertainty.
 
+#### Tree Visualizations
+![Tree Visualizations](/assets/Tree%20Visualizations.png)
+
 The visualization limited to a maximum depth of 3 still provided substantial insight while keeping the tree readable and avoiding overfitting. The tree used Gini impurity 
 to evaluate the quality of splits and consistently chose branches that maximized class separation at each level. From the leaf nodes, the model was generally able to cluster
-records into predominantly high or low usage groups, as indicated by the clear majority classes in the final nodes. This decision tree helps surface the most influential fact
-ors and the decision rules driving predictions, offering both predictive utility and interpretability. These results can support further analysis or guide targeted policy 
-interventions in regions or payer types with higher predicted low-value care utilization.
+records into predominantly high or low usage groups, as indicated by the clear majority classes in the final nodes. This decision tree helps surface the most influential factors and the decision rules driving predictions, offering both predictive utility and interpretability. These results can support further analysis or guide targeted policy interventions in regions or payer types with higher predicted low-value care utilization.
+
+#### Confusion Matrices
+![Confusion Matrices](/assets/Confusion%20Matrices.png)
 
 ---
 
