@@ -39,6 +39,11 @@ present or not. For example, if a word appears in a document or not. It uses a B
 ## Data Prep
 The dataset used for the Naive Bayes classification model was derived from a cleaned and structured version of the FY23 Low Value Care data. Since Naive Bayes is a supervised learning algorithm, it requires labeled data with a target variable that the model will learn to predict. In this case, the binary target label “Need Level” (e.g., High or Low) was used to train and evaluate the model. To prepare the data, it was first encoded to ensure that all features were numeric, as required by Scikit-learn’s Multinomial Naive Bayes implementation. The dataset was then split into a Training Set and a Testing Set using an 80/20 ratio. The split was conducted randomly to preserve representativeness while ensuring that the two subsets remained disjoint to ensure no overlap between training and testing data. This separation is important for accurately assessing the model’s ability to generalize to unseen data. The images below include a sample of the cleaned dataset, training and testing subsets, and a visualization of class distribution used to validate the balance of the target variable before model training.
 
+### Dataset Used
+
+The [FY23 Public Low Value Care dataset](assets/FY23_Public%20Data_Low%20Value%20Care.xlsx) dataset was used for this Naive Bayes classification. This dataset contains labeled examples used to train and test the model. Only labeled data can be used in supervised learning methods like Naive Bayes.
+
+
 <!-- Sample of cleaned data -->
 ![Sample of Cleaned Data](assets/Sample%20of%20Cleaned%20Data.jpeg)
 
