@@ -33,6 +33,8 @@ Colorado’s population trends show both growth and decline across different reg
 
 This project combines population projection data with predictive analytics techniques such as clustering, principal component analysis (PCA), and supervised learning models like Naive Bayes and decision trees. These methods provide an analysis into hidden patterns in Colorado counties by potential need and emerging trends that may otherwise be obscured in raw data tables. The analytical approach is grounded in Colorado-specific datasets, ensuring regional relevance and practical application for local stakeholders. By translating demographic projections into actionable insights, this research provides a foundation for forward-looking mental health service planning that accounts for both geographic and age-based disparities.
 
+To effectively anticipate future service needs, this project integrates machine learning techniques that go beyond simple trend extrapolation. Predictive modeling using classification algorithms, clustering, and dimensionality reduction provides a more nuanced view of where mental health demand may grow and which populations may be most impacted. By applying tools such as support vector machines (SVMs), decision trees, and principal component analysis (PCA), this analysis identifies patterns across demographic variables and geographic regions that traditional forecasting methods may overlook. These techniques enable us to classify, group, and visualize data in a way that highlights emerging needs.
+
 # Research Questions 
 1.	Which Colorado counties are projected to experience the highest population growth between 2025 and 2055?
 2.	How is the age distribution expected to change across Colorado regions over the next 20–30 years?
