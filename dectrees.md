@@ -3,6 +3,7 @@ layout: default
 title: Decision Tree's
 ---
 
+<link rel="stylesheet" href="assets/style.css">
 
 <ul class="nav">
   <li><a href="index.html">Home</a></li>
