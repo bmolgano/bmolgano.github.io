@@ -3,6 +3,8 @@ layout: default
 title: Data Prep and EDA
 ---
 
+<link rel="stylesheet" href="assets/style.css">
+
 <ul class="nav">
   <li><a href="index.html">Home</a></li>
   <li><a href="introduction.html">Introduction</a></li>
