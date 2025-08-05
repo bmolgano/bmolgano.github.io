@@ -38,13 +38,6 @@ Radial Basis Function Kernel measures the distance between two points and return
 
 ![Mapped Data in 3D via Polynomial Kernel](assets/mapped%20data%20in%203d%20polynomial%20kernel.png)
 
-
----
-
-## Sample of Data Used
-
-
-
 ---
 
 ## (b) Data Preparation
