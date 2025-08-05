@@ -50,24 +50,36 @@ Radial Basis Function Kernel measures the distance between two points and return
 ## (b) Data Preparation
 The dataset used is from the Low Value Care FY23 Public Data report. It includes information on service type, region, payer type, and associated spending. Each row represents a healthcare service entry for a given payer and year. The goal is to classify whether the low-value care spending is above the median threshold, making this a binary classification task.
 
+![Uncleaned Data Sample](assets/uncleaned%20data.jpeg)
+
 The Training and test data must be disjointed because in supervised learning, model performance is evaluated on unseen data. If the same data points appear in both the 
 training and testing sets, the model could memorize patterns and overfitting will occur, giving an inflated sense of accuracy. Ensuring the sets are disjoint preserves the 
-integrity of the evaluation.
+integrity of the evaluation. To evaluate the model's performance, the dataset was split into two parts, the Training Set (80%), used to train the SVM model, and the Testing Set (20%), used to evaluate the model's performance on unseen data. This was done using sklearn.model_selection.train_test_split().
 
-To evaluate the model's performance, the dataset was split into two parts, the Training Set (80%), used to train the SVM model, and the Testing Set (20%), used to evaluate 
-the model's performance on unseen data. This was done using sklearn.model_selection.train_test_split().
+![Cleaned Data Sample](assets/cleaned%20data%208.5.25.jpeg)
 
-**Data Preparation and Train-Test Split for SVM:** The dataset was first cleaned to include only numeric and labeled records with valid values for low-value care spending and
-service volume. A new binary target variable, High_LV_Spend, was created to indicate whether a record’s total low-value spending exceeded the dataset’s median value. This 
-transformation allowed the classification task to be framed as a supervised binary classification problem.
 
-To evaluate model performance fairly, the data was divided into training and testing sets, ensuring they were completely disjoint. This separation is essential in supervised
-learning: the training set is used to build the model, while the testing set measures its ability to generalize to new, unseen data. Allowing overlap between the sets would
-lead to data leakage, artificially high accuracy, and unreliable evaluation metrics.
 
-Support Vector Machines (SVMs) require input data to be both numerical and labeled, as they rely on geometric operations such as dot products to compute distances and margins
-between data points. These calculations cannot be performed on raw categorical or unlabeled data. Additionally, because SVMs are supervised models, they must be trained using
-examples with known class labels in order to learn an effective decision boundary.
+**Data Preparation and Train-Test Split for SVM:** The dataset was first cleaned to include only numeric and labeled records with valid values for low-value care spending and service volume. A new binary target variable, High_LV_Spend, was created to indicate whether a record’s total low-value spending exceeded the dataset’s median value. This transformation allowed the classification task to be framed as a supervised binary classification problem.
+
+![Training and Test Data Heatmaps](assets/training%20and%20test%20data.png)
+
+To evaluate model performance fairly, the data was divided into training and testing sets, ensuring they were completely disjoint. This separation is essential in supervised learning as the training set is used to build the model, while the testing set measures its ability to generalize to new, unseen data. Allowing overlap between the sets would lead to data leakage, artificially high accuracy, and unreliable evaluation metrics.
+
+Support Vector Machines (SVMs) require input data to be both numerical and labeled, as they rely on geometric operations such as dot products to compute distances and margins between data points. These calculations cannot be performed on raw categorical or unlabeled data. Additionally, because SVMs are supervised models, they must be trained using examples with known class labels in order to learn an effective decision boundary.
+
+### Test Dataset Sample
+
+A sample of the testing data used to evaluate the SVM model can be downloaded below:
+
+[Download Test Sample CSV](assets/test_sample_svm.csv)
+
+
+### Training Dataset Sample
+
+A sample of the training data used to build the SVM model can be downloaded below:
+
+[Download Train Sample CSV](assets/train_sample_svm.csv)
 
 ---
 
@@ -88,19 +100,22 @@ model missed a number of high-spending cases, reflected in a lower recall for th
 The confusion matrix highlights this balance. The model correctly identified 568 low-spending cases (true negatives) and 527 high-spending cases (true positives). However, 
 it also generated 178 false positives (low spenders misclassified as high) and 231 false negatives (high spenders misclassified as low).
 
+![Confusion Matrix - SVM](assets/Confusion%20Matrix%20SVM.jpeg)
+
 The macro and weighted averages of precision, recall, and F1 score indicate a generally balanced performance across both classes. This suggests the model is not overly 
-biased toward either outcome, which is ideal in balanced classification tasks. However, the relatively higher number of false negatives for high spenders suggests a potential 
-area for model improvement. If minimizing missed high-spending cases is critical for policy or operational reasons, future iterations of the model could incorporate adjusted 
-class weights, hyperparameter tuning, or alternative kernel functions to optimize performance further.
+biased toward either outcome, which is ideal in balanced classification tasks. However, the relatively higher number of false negatives for high spenders suggests a potential area for model improvement. If minimizing missed high-spending cases is critical for policy or operational reasons, future iterations of the model could incorporate adjusted class weights, hyperparameter tuning, or alternative kernel functions to optimize performance further.
 
 ---
 **(d) Results:** The radial basis function (RBF) kernel with C = 10 delivered the strongest overall performance, achieving an accuracy of 79.1%. It outperformed both the 
-linear and polynomial kernels, indicating that the decision boundary in this classification task is likely nonlinear. While the linear kernel (C = 10) was simpler and still 
-relatively effective, it misclassified a larger portion of high-spending examples. The polynomial kernel performed the weakest overall in this configuration, suggesting that 
-it may not be well-suited to the patterns present in this dataset. This SVM analysis demonstrates that the RBF kernel was best at capturing the complex relationships between 
-features, achieving a classification accuracy of nearly 79%. These findings suggest that low-value care spending patterns are not linearly separable, and more flexible models
-like RBF are required to accurately classify them.
+linear and polynomial kernels, indicating that the decision boundary in this classification task is likely nonlinear. While the linear kernel (C = 10) was simpler and still relatively effective, it misclassified a larger portion of high-spending examples. The polynomial kernel performed the weakest overall in this configuration, suggesting that it may not be well-suited to the patterns present in this dataset. This SVM analysis demonstrates that the RBF kernel was best at capturing the complex relationships between features, achieving a classification accuracy of nearly 79%. These findings suggest that low-value care spending patterns are not linearly separable, and more flexible models like RBF are required to accurately classify them.
 
+![Confusion Matrices - Linear vs RBF Kernel](assets/linear%20kernel%20-%20confusion%20matrices%20-%20rbf%20kernel.png)
+
+### SVM Kernel Performance Summary
+
+The table below shows the accuracy achieved by each kernel type across different regularization (C) values.
+
+![Kernel Cost vs Accuracy Table](assets/Kernel-%20cost%20-%20accuracy.jpeg)
 
 ---
 
@@ -111,12 +126,8 @@ type, service type, necessary care spending, and service volume. Three kernel ty
 regularization (C) values. The RBF kernel with C = 10 achieved the highest accuracy at 79.1%, indicating that the relationship between input features and spending 
 classification is likely nonlinear and benefits from flexible, high-dimensional decision boundaries.
 
-While the linear kernel offered computational simplicity, it underperformed in identifying high-spending cases. The polynomial kernel showed the weakest performance overall,
-likely due to its sensitivity to parameter tuning and increased model complexity. These results suggest that SVMs with nonlinear kernels like RBF are well suited for 
-modeling healthcare cost data, where patterns often defy linear separability.
+While the linear kernel offered computational simplicity, it underperformed in identifying high-spending cases. The polynomial kernel showed the weakest performance overall, likely due to its sensitivity to parameter tuning and increased model complexity. These results suggest that SVMs with nonlinear kernels like RBF are well suited for modeling healthcare cost data, where patterns often defy linear separability.
 
-The classification model effectively identified payer-region combinations likely to exceed median low-value care spending, offering potential applications in targeted audits,
-quality improvement efforts, and health system policy design. Future work could expand the feature set to include provider characteristics or demographic variables, 
-implement cross-validation for improved generalizability, and compare SVM performance to alternative classifiers such as decision trees or ensemble models.
+The classification model effectively identified payer-region combinations likely to exceed median low-value care spending, offering potential applications in targeted audits, quality improvement efforts, and health system policy design. Future work could expand the feature set to include provider characteristics or demographic variables, implement cross-validation for improved generalizability, and compare SVM performance to alternative classifiers such as decision trees or ensemble models.
 
 ---
