@@ -24,12 +24,21 @@ title: Support Vector Machines
 # Support Vector Machines
 
 ## (a) Overview
+
 Support Vector Machines are supervised learning models used for classification and regression. SVMs aim to find the optimal hyperplane that best separates data points of 
 different classes in a feature space. SVMs are considered linear separators because they aim to find the optimal hyperplane that separates data points of different classes 
-using a linear decision boundary. SVMs use the kernel trick to project data into a higher-dimensional space where a linear separator might exist. In the dual form of the SVM
-optimization problem, the classifier makes predictions using only dot products between data points. Instead of working directly with the original input features, it evaluates
-how similar a new data point is to each of the training points by measuring their geometric alignment. This similarity is calculated using a function called a kernel, which 
-effectively replaces the traditional dot product. The kernel allows the SVM to operate in a higher-dimensional space without explicitly transforming the data into that space.
+using a linear decision boundary. SVMs use the kernel trick to project data into a higher-dimensional space where a linear separator might exist. In the dual form of the SVM optimization problem, the classifier makes predictions using only dot products between data points. Instead of working directly with the original input features, it evaluates how similar a new data point is to each of the training points by measuring their geometric alignment. This similarity is calculated using a function called a kernel, which effectively replaces the traditional dot product. The kernel allows the SVM to operate in a higher-dimensional space without explicitly transforming the data into that space.
+
+The polynomial kernel maps the input features into a higher-dimensional space using polynomial combinations of features.
+
+![Nonlinear Data in 2D](assets/nonlinear%20data%20in%202d.png)
+
+
+Radial Basis Function Kernel measures the distance between two points and returns a value close to 1 if they are similar or close together and 0 if they are different or far apart.
+
+![Mapped Data in 3D via Polynomial Kernel](assets/mapped%20data%20in%203d%20polynomial%20kernel.png)
+
+
 ---
 
 ## Sample of Data Used
@@ -39,9 +48,7 @@ effectively replaces the traditional dot product. The kernel allows the SVM to o
 ---
 
 ## (b) Data Preparation
-The dataset used is from the Low Value Care FY23 Public Data report. It includes information on service type, region, payer type, and associated spending. Each row represents
-a healthcare service entry for a given payer and year. The goal is to classify whether the low-value care spending is above the median threshold, making this a binary 
-classification task.
+The dataset used is from the Low Value Care FY23 Public Data report. It includes information on service type, region, payer type, and associated spending. Each row represents a healthcare service entry for a given payer and year. The goal is to classify whether the low-value care spending is above the median threshold, making this a binary classification task.
 
 The Training and test data must be disjointed because in supervised learning, model performance is evaluated on unseen data. If the same data points appear in both the 
 training and testing sets, the model could memorize patterns and overfitting will occur, giving an inflated sense of accuracy. Ensuring the sets are disjoint preserves the 
@@ -66,6 +73,7 @@ examples with known class labels in order to learn an effective decision boundar
 
 ## (c) Code
 
+[View the full SVM Code Notebook](assets/SVM_Code_Notebook.ipynb)
 
 --- 
 
