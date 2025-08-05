@@ -3,6 +3,7 @@ layout: default
 title: PCA
 ---
 
+<link rel="stylesheet" href="assets/style.css">
 
 <ul class="nav">
   <li><a href="index.html">Home</a></li>
