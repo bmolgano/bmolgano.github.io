@@ -1,0 +1,52 @@
+---
+layout: default
+title: Support Vector Machines
+---
+
+<ul class="nav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="introduction.html">Introduction</a></li>
+  <li><a href="conclusion.html">Conclusions</a></li>
+  <li class="dropdown">
+    <a href="dataprep_eda.html" class="dropbtn">DataPrep_EDA</a>
+    <div class="dropdown-content">
+      <a href="clustering.html">Clustering</a>
+      <a href="pca.html">PCA</a>
+      <a href="naivebayes.html">NaiveBayes</a>
+      <a href="dectrees.html">DecTrees</a>
+      <a href="svms.html">SVMs</a>
+    </div>
+  </li>
+</ul>
+
+---
+
+# Support Vector Machines
+
+## (a) Overview
+
+---
+
+## Sample of Data Used
+
+
+
+---
+
+## (b) Data Preparation
+
+
+---
+
+## (c) Code
+
+
+--- 
+
+## (d) Results
+
+
+---
+
+## (e) Conclusions
+---
