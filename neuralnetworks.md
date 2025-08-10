@@ -29,6 +29,8 @@ title: Neural Networks
 ## (a) Overview
 A neural network is a machine learning model inspired by the human brain, made up of layers of connected nodes or neurons that process information. The input layer receives data, hidden layers transform it by applying weights, biases, and activation functions, and the output layer produces the final prediction or classification. The network learns by adjusting its weights and biases through a process called backpropagation, using optimization methods like gradient descent, so it can recognize patterns and improve its accuracy over time.
 
+**Sample CSV:** [sample_low_value_care_rows.csv](<assets/sample_low_value_care_rows.csv>)
+
 ---
 
 ## (b) Data Preparation
@@ -80,5 +82,7 @@ For interpreting the results for Low-Value Care, the network is reliably disting
 ## (e) Conclusions
 
 The analysis shows that a neural network can capture meaningful patterns in Low-Value Care spending when fed detailed, cleaned, and structured tabular data. Using 75 input features spanning geography, payer type, time, and service characteristics, the regression baseline achieved R² = 0.436, indicating substantial explanatory power for Total LV Spending. More importantly for decision making, a binary classification task (High vs. Low spending by median threshold), the one-hidden-layer model reached 87.1% test accuracy and produced a well-balanced confusion matrix, showing it can reliably flag higher-spend cases. While these predictions are not yet precise enough for line-item budgeting, they provide actionable signals about which combinations of region, payer, year, and service type are most associated with elevated LVC spending which is useful for prioritizing audits and interventions. This work confirms that neural networks are a viable tool for forecasting and triaging LVC patterns in Colorado, and it sets a strong foundation for future improvements by incorporating socioeconomic indicators, historical utilization, and provider-level features to further boost accuracy and policy relevance.
+
+**Test predictions (CSV):** [lvc_test_predictions.csv](<assets/lvc_test_predictions.csv>)
 
 ---
