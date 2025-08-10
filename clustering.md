@@ -17,6 +17,7 @@ title: Clustering
       <a href="naivebayes.html">NaiveBayes</a>
       <a href="dectrees.html">DecTrees</a>
       <a href="svms.html">SVMs</a>
+      <a href="neuralnetworks.html">NeuralNetworks</a>
     </div>
   </li>
 </ul>
