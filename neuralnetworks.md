@@ -34,8 +34,7 @@ A neural network is a machine learning model inspired by the human brain, made u
 
 **Neural Network Architecture**
 
-![Neural Network Architecture](<assets/Screenshot_10-8-2025_17178_.jpeg
->) 
+![Neural Network Architecture](<assets/Screenshot_10-8-2025_17178_.jpeg>) 
 
 ---
 
