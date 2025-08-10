@@ -48,6 +48,8 @@ With the binary classifier, the label is defined as High (1) vs Low (0) Total LV
 
 ## (c) Code
 
+**Notebook:** [Part 5 of Final Project (Neural Network)](<assets/Part_5_of_Final_Project_8_10_25.ipynb>)
+
 --- 
 
 ## (d) Results
