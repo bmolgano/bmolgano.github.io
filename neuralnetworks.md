@@ -34,6 +34,14 @@ A neural network is a machine learning model inspired by the human brain, made u
 ## (b) Data Preparation
 Supervised learning requires labeled data and a strict train and test separation. In this project, each row of the Low-Value Care dataset is defined by the combination of Region/ Payer/ Year/ Service, is one example. The data was prepared by cleaning currency fields, imputing missing values, one-hot encoding the categorical columns (Division of Insurance Region, Payer Type, Service Type), and scaling the numeric predictors (Year, Total Spending on Necessary Care, Total LV Services). To prevent target leakage, the target column was excluded from the feature set before preprocessing. Then a disjoint 80/20 split was created using stratification to preserve class balance. The Training Set contains 8,937 rows (Low=4,468; High=4,469) and the Testing Set contains 2,235 rows (Low=1,118; High=1,117). The training set is used solely to learn the model’s weights and the testing set is held out until final evaluation to provide an unbiased estimate of generalization. The final input matrix after encoding and scaling has 75 features. 
 
+**Sample of cleaned data**
+
+![Sample of cleaned LVC rows](<assets/sample.jpeg>)
+
+**Train/Test split (disjoint sets)**
+
+![Train/Test Split (Disjoint Sets)](<assets/Train-test Split (Disjoint Sets).png>)
+
 With the binary classifier, the label is defined as High (1) vs Low (0) Total LV Spending, using the median of Total LV Spending on the full dataset as the threshold. The neural network is therefore configured with one hidden layer (ReLU) and a single output logit, trained with BCEWithLogitsLoss and applies the sigmoid internally. This matches the requirement of one output for a binary label and makes it straightforward to report test accuracy and a confusion matrix from the held-out set.
 
 ---
@@ -46,7 +54,24 @@ With the binary classifier, the label is defined as High (1) vs Low (0) Total LV
 
 Across 30 epochs, the one-hidden-layer classifier converged smoothly. Training and test loss declined in parallel and test accuracy climbed over the final five epochs. On the held out test set, the model achieved 87.1% accuracy. The confusion matrix shows TN = 990, FP = 128, FN = 161, and TP = 956, indicating strong performance on both classes with slightly more false negatives than false positives. This pattern suggests the model is a bit more conservative on predicting “High” spending but overall generalizes well without obvious overfitting.
 
+**Loss — last 5 epochs**
+
+![Loss — Last 5 Epochs](<assets/Loss — Last 5 Epochs.png>)
+
+**Accuracy — last 5 epochs**
+
+![Accuracy — Last 5 Epochs](<assets/Accuracy — Last 5 Epochs.png>)
+
+**Confusion matrix (binary classification)**
+
+![Confusion Matrix — Binary Classification](<assets/Confusion Matrix (Binary Classification.png>)
+
+
 For interpreting the results for Low-Value Care, the network is reliably distinguishing High vs Low total LV spending using only region, payer, year, service type, and a small set of numeric predictors. To push performance further, richer features like lagged utilization by service, regional socioeconomic indicators could be engineered or tuning the decision threshold away from 0.5 to balance FN/FP to aid in policy improvement. Overall, this is a strong baseline that meets classification requirements and produces clear, actionable test-set performance.
+
+**Epoch log screenshot**
+
+![Training log — 30 epochs](<assets/Screenshot_10-8-2025_14517_colab.research.google.com.jpeg>)
 
 ---
 
