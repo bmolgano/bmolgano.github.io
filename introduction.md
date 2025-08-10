@@ -10,14 +10,14 @@ title: Introduction
   <li><a href="introduction.html">Introduction</a></li>
   <li><a href="conclusion.html">Conclusions</a></li>
   <li class="dropdown">
-    <a href="dataprep_eda.html" class="dropbtn">DataPrep_EDA</a>
+    <a href="dataprep_eda.html" class="dropbtn">Data Preparation and EDA</a>
     <div class="dropdown-content">
       <a href="clustering.html">Clustering</a>
       <a href="pca.html">PCA</a>
-      <a href="naivebayes.html">NaiveBayes</a>
-      <a href="dectrees.html">DecTrees</a>
+      <a href="naivebayes.html">Naive Bayes</a>
+      <a href="dectrees.html">Decision Trees</a>
       <a href="svms.html">SVMs</a>
-      <a href="neuralnetworks.html">NeuralNetworks</a>
+      <a href="neuralnetworks.html">Neural Networks</a>
     </div>
   </li>
 </ul>
