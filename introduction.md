@@ -40,14 +40,33 @@ To effectively anticipate future service needs, this project integrates machine 
 
 # Research Questions 
 1.	Which Colorado counties are projected to experience the highest population growth between 2025 and 2055?
+	Front Range Counties like El Paso, Adams, Weld, Arapahoe, and Douglas. 
+
 2.	How is the age distribution expected to change across Colorado regions over the next 20–30 years?
+   Colorado is aging, the share and count of residents age 65+ grow fastest, while working-age growth moderates and varies by region.
+
 3.	What percentage of projected population growth in Colorado is among adults aged 18–64 versus those aged 65 and older?
+   Projections show the 65+ population growing roughly by half by 2050, meaning older adults account for a disproportionately large share of net growth.
+
 4.	How might these demographic shifts correlate with future mental health service demand by region?
+   Regions with rapid growth in older adults can expect rising need for late-life depression care, dementia-related services, and caregiver supports, while fast-growing younger corridors may see demand for adolescent and young-adult services.
+
 5.	Which Colorado counties currently face mental health provider shortages, and how might that overlap with projected population growth?
+   Many rural and frontier counties carry Mental Health Professional Shortage Area designations, and underserved pockets also exist in metro counties.
+
 6.	Are there specific age groups driving the largest increases in projected service demand?
+   Yes, older adults (especially 65+ and 75+) are the fastest-growing cohorts, and in some metros, adolescents and young adults also increase with overall growth.
+
 7.	What policies or programs are already in place to address projected mental health service needs across Colorado?
+   Colorado’s Behavioral Health Administration (BHA) leads system reforms and workforce efforts, backed by substantial state and federal behavioral-health spending, and statute establishes a statewide workforce-development program.
+
 8.	How do rural and urban counties compare in terms of both projected population growth and existing mental health resources?
+   Urban Front Range counties see the largest absolute population gains and more providers overall but still contain underserved areas.
+
 9.	What gaps exist in the current data that make it harder to forecast mental health service demand?
+   Key gaps include timely, granular service-utilization data, consistent race/ethnicity and payer detail, provider capacity and wait-time data, and small-area population projections beyond 2050.
+
 10.	How can predictive modeling help mental health organizations and policymakers plan for future needs more effectively?
+   Models can combine demographic projections with current utilization to rank regions by future risk.
 
 
