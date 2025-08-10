@@ -30,7 +30,7 @@ title: Data Prep and EDA
 
 For this project, two primary datasets were gathered to support the goal of forecasting mental health service demand based on projected population growth in Colorado:
 
-Additional Datasets will be added to this research. A data request has been submitted to Center for Improving Value in Healthcare for the "Colorado All Payer Claims Database (CO APDC). CIVHC is the administrator of Colorado All Payer Claims Database (CO APCD), the state’s most comprehensive health care claims database representing the majority of covered lives and payers. The CO APCD includes the percentage of the population represented in each county and information on race and ethnicity data, behavioral health services, dental code volume, and vision claims. 
+This project also uses the Low-Value Care (LVC) dataset from Colorado’s Affordability Dashboard. The dataset summarizes medical services that do not improve patient outcomes, add avoidable cost, and in some cases may cause harm. It enables stakeholders (communities, providers, payers, policy makers, and agencies) to identify where wasteful utilization occurs so efforts can be targeted to improve value. This data was requested from the Center for Improving Value in Healthcare for the "Colorado All Payer Claims Database (CO APDC). CIVHC is the administrator of Colorado All Payer Claims Database (CO APCD), the state’s most comprehensive health care claims database representing the majority of covered lives and payers. The CO APCD includes the percentage of the population represented in each county and information on race and ethnicity data, behavioral health services, dental code volume, and vision claims. 
 
 1. **Colorado Population Projections Dataset**
    - Source: [Colorado Information Marketplace](https://data.colorado.gov/Demographics/Population-Projections-in-Colorado/q5vp-adf3/about_data)
@@ -44,6 +44,10 @@ Additional Datasets will be added to this research. A data request has been subm
      https://api.census.gov/data/2022/acs/acs5?get=NAME,B01003_001E&for=county:*&in=state:08&key=YOUR_API_KEY
      ```
    - [View Python Notebook for API Collection](assets/colorado_population_api_project.ipynb)
+  
+3.  **Low-Value Care Dataset
+    [Low-Value Care dataset (Excel) — download](assets/FY23_Public%20Data_Low%20Value%20Care%20%281%29.xlsx)
+  
 
 ## Why These Datasets Were Chosen
 
